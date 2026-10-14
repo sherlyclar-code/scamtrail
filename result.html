@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#263750">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 36 36'%3E%3Crect width='36' height='36' rx='10' fill='%239DB8DC'/%3E%3Ccircle cx='27' cy='11' r='3.5' fill='%23263750'/%3E%3Cpath d='M9 27c5 0 4.5-7 9-7s4-7 9-7' fill='none' stroke='%23263750' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Bricolage+Grotesque:opsz,wght@12..96,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <title>Your result | ScamTrail</title>
+  <meta name="description" content="Your ScamTrail result: the risk level, the warning signs we found and what to do now.">
+  <meta name="robots" content="noindex">
+</head>
+<body>
+  <svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+    <symbol id="i-link" viewBox="0 0 24 24"><path d="M10 13a5 5 0 0 0 7.07 0l3-3a5 5 0 0 0-7.07-7.07l-1.5 1.5"/><path d="M14 11a5 5 0 0 0-7.07 0l-3 3a5 5 0 0 0 7.07 7.07l1.5-1.5"/></symbol>
+    <symbol id="i-message" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/><path d="M8 9h8M8 13h5"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><rect x="6.5" y="2" width="11" height="20" rx="2.5"/><path d="M11 18h2"/></symbol>
+    <symbol id="i-image" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2.5"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="m21 15-5-5L5 21"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></symbol>
+    <symbol id="i-shield-check" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></symbol>
+    <symbol id="i-alert" viewBox="0 0 24 24"><path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z"/><path d="M12 9v4M12 17h.01"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></symbol>
+    <symbol id="i-external" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14 21 3"/></symbol>
+    <symbol id="i-bank" viewBox="0 0 24 24"><path d="M3 10h18L12 4 3 10z"/><path d="M5 10v8M9.5 10v8M14.5 10v8M19 10v8M3 20h18"/></symbol>
+    <symbol id="i-card" viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="2.5"/><path d="M2 10h20M6 15h4"/></symbol>
+    <symbol id="i-gift" viewBox="0 0 24 24"><rect x="3" y="8" width="18" height="4" rx="1"/><path d="M12 8v13M19 12v9H5v-9"/><path d="M7.5 8a2.5 2.5 0 0 1 0-5C11 3 12 8 12 8s1-5 4.5-5a2.5 2.5 0 0 1 0 5"/></symbol>
+    <symbol id="i-id" viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="2.5"/><circle cx="8" cy="11" r="2"/><path d="M5 16c.7-1.2 1.8-2 3-2s2.3.8 3 2M14 10h5M14 14h3"/></symbol>
+    <symbol id="i-monitor" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="13" rx="2.5"/><path d="M8 21h8M12 17v4"/></symbol>
+    <symbol id="i-book" viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20V3H6.5A2.5 2.5 0 0 0 4 5.5z"/><path d="M4 19.5A2.5 2.5 0 0 0 6.5 22H20v-5"/></symbol>
+    <symbol id="i-quiz" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M9.1 9a3 3 0 0 1 5.8 1c0 2-3 3-3 3M12 17h.01"/></symbol>
+    <symbol id="i-family" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.9M16 3.1a4 4 0 0 1 0 7.8"/></symbol>
+    <symbol id="i-share" viewBox="0 0 24 24"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="m8.6 13.5 6.8 4M15.4 6.5l-6.8 4"/></symbol>
+    <symbol id="i-flag" viewBox="0 0 24 24"><path d="M4 22V4M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1"/></symbol>
+    <symbol id="i-upload" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M17 8l-5-5-5 5M12 3v12"/></symbol>
+    <symbol id="i-notes" viewBox="0 0 24 24"><rect x="5" y="4" width="14" height="18" rx="2"/><path d="M9 2h6v4H9zM9 11h6M9 15h6"/></symbol>
+    <symbol id="i-letter" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="m3 7 9 6 9-6"/></symbol>
+    <symbol id="i-lock" viewBox="0 0 24 24"><rect x="4" y="11" width="16" height="10" rx="2.5"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></symbol>
+    <symbol id="i-eye" viewBox="0 0 24 24"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8z"/></symbol>
+    <symbol id="i-copy" viewBox="0 0 24 24"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></symbol>
+    <symbol id="i-print" viewBox="0 0 24 24"><path d="M6 9V2h12v7M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></symbol>
+    <symbol id="i-trash" viewBox="0 0 24 24"><path d="M3 6h18M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M19 6l-1 14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 6"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></symbol>
+    <symbol id="i-wifi-off" viewBox="0 0 24 24"><path d="m2 2 20 20M8.5 16.5a5 5 0 0 1 7 0M2 8.8a15 15 0 0 1 4.2-2.6M10.7 5.1A15 15 0 0 1 22 8.8M5 12.9a10 10 0 0 1 5.2-2.8M16.9 11a10 10 0 0 1 2.1 1.9M12 20h.01"/></symbol>
+  </svg>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="ScamTrail home">
+        <svg viewBox="0 0 36 36" aria-hidden="true"><rect width="36" height="36" rx="10" fill="#9DB8DC"/><path d="M9 27c5 0 4.5-7 9-7s4-7 9-7" fill="none" stroke="#263750" stroke-width="3" stroke-linecap="round" stroke-dasharray="0.1 5.5"/><circle cx="27" cy="11" r="3.5" fill="#263750"/></svg>
+        ScamTrail
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <svg class="icon" aria-hidden="true"><use href="#i-menu"/></svg>Menu
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html#check">Check something</a></li>
+          <li><a href="index.html#alerts">Scam alerts</a></li>
+          <li><a href="index.html#learn">Learn</a></li>
+          <li><a class="nav-help" href="recovery.html">Sent money? Get help</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero hero-small" aria-labelledby="result-title">
+      <div class="container">
+        <span class="eyebrow">Your result</span>
+        <h1 id="result-title" tabindex="-1">Here's what we found</h1>
+        <p id="result-intro">We checked it for common warning signs. Read the steps below before you do anything else.</p>
+        <div class="checked-item" id="checked-item" hidden>
+          <span class="label" id="checked-label">What you checked</span>
+          <code id="checked-value"></code>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-label="Result details">
+      <div class="container">
+        <div id="no-result" class="card" hidden>
+          <h2>Nothing to show yet</h2>
+          <p>We couldn't find anything to check. This can happen if the page was refreshed in a new tab or opened from a bookmark.</p>
+          <a class="btn btn-primary" href="index.html#check">Check a link, message or number<svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        </div>
+
+        <div class="result-layout" id="result" hidden>
+          <div class="result-main">
+            <article class="card risk-card" id="risk-card" data-level="1" aria-labelledby="risk-label">
+              <div class="risk-top">
+                <span class="icon-badge" id="risk-icon-wrap" style="margin:0"><svg class="icon icon-lg" aria-hidden="true"><use id="risk-icon" href="#i-search"/></svg></span>
+                <div>
+                  <p class="risk-level-text" id="risk-level-text">Risk level 1 of 4</p>
+                  <h2 class="risk-label" id="risk-label">No warning signs found, still verify</h2>
+                </div>
+              </div>
+              <div class="meter" role="img" id="risk-meter" aria-label="Risk level 1 of 4">
+                <span></span><span></span><span></span><span></span>
+              </div>
+              <div class="meter-scale" aria-hidden="true"><span>1 No signs found</span><span>4 Very high</span></div>
+              <p class="risk-summary" id="risk-summary"></p>
+            </article>
+
+            <article class="card" aria-labelledby="flags-title">
+              <h2 id="flags-title">Warning signs we found</h2>
+              <ul class="flag-list" id="flag-list"></ul>
+              <div id="notes"></div>
+            </article>
+
+            <article class="card" aria-labelledby="todo-title">
+              <h2 id="todo-title">What to do now</h2>
+              <ol class="todo-list" id="todo-list"></ol>
+            </article>
+          </div>
+
+          <aside class="result-aside">
+            <div class="card card-tint">
+              <h2 style="font-size:1.5rem">Report and share</h2>
+              <p>Reporting helps stop scammers. Sharing a warning helps protect people you care about.</p>
+              <div class="btn-row" style="flex-direction:column">
+                <a class="btn btn-primary btn-block" href="https://www.scamwatch.gov.au/report-a-scam" rel="noopener" target="_blank"><svg class="icon" aria-hidden="true"><use href="#i-flag"/></svg>Report to Scamwatch<span class="visually-hidden"> (opens in a new tab)</span></a>
+                <button class="btn btn-secondary btn-block" type="button" id="share-btn"><svg class="icon" aria-hidden="true"><use href="#i-share"/></svg>Share a warning</button>
+                <a class="btn btn-ghost btn-block" href="index.html#check"><svg class="icon" aria-hidden="true"><use href="#i-search"/></svg>Check something else</a>
+              </div>
+              <p class="status-msg" id="share-status" role="status"></p>
+              <p style="font-size:1rem;margin:12px 0 0">Lost money or were hacked? Also report to <a href="https://www.cyber.gov.au/report-and-recover/report" rel="noopener" target="_blank">ReportCyber<span class="visually-hidden"> (opens in a new tab)</span></a>.</p>
+            </div>
+
+            <div class="sent-money">
+              <div class="icon-badge icon-badge-warn"><svg class="icon icon-lg" aria-hidden="true"><use href="#i-alert"/></svg></div>
+              <h2>Already clicked, paid or shared details?</h2>
+              <p>Don't wait. Follow our step-by-step recovery guide to stop further loss and get help.</p>
+              <a class="btn btn-warn btn-block" id="recovery-link" href="recovery.html">Go to recovery steps<svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+            </div>
+          </aside>
+        </div>
+
+        <p class="disclaimer" style="margin-top:40px">
+          <b>Please note:</b> ScamTrail looks for common warning signs. It can't confirm that anything is safe or definitely a scam, and scammers change their tricks all the time. A low risk level is not a guarantee. If you're unsure, contact the organisation directly using details you find yourself. This is general information, not legal or financial advice.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <h2 class="footer-head">Get help from official services</h2>
+      <p class="footer-sub">These services are free. They will never ask you to pay to get your money back.</p>
+      <ul class="help-list">
+        <li>
+          <strong>Scamwatch</strong>
+          <p>Report a scam and see the latest scam alerts.</p>
+          <a href="https://www.scamwatch.gov.au" rel="noopener" target="_blank">scamwatch.gov.au<span class="visually-hidden"> (opens in a new tab)</span></a>
+        </li>
+        <li>
+          <strong>ReportCyber</strong>
+          <p>Report online crime, hacking or money lost online.</p>
+          <a href="https://www.cyber.gov.au/report-and-recover/report" rel="noopener" target="_blank">cyber.gov.au<span class="visually-hidden"> (opens in a new tab)</span></a>
+        </li>
+        <li>
+          <strong>IDCARE</strong>
+          <p>Free help if your identity or personal details were stolen.</p>
+          <a href="tel:1800595160">1800 595 160</a><br>
+          <a href="https://www.idcare.org" rel="noopener" target="_blank">idcare.org<span class="visually-hidden"> (opens in a new tab)</span></a>
+        </li>
+        <li>
+          <strong>AFCA</strong>
+          <p>Free, independent complaints if your bank won't help.</p>
+          <a href="tel:1800931678">1800 931 678</a><br>
+          <a href="https://www.afca.org.au" rel="noopener" target="_blank">afca.org.au<span class="visually-hidden"> (opens in a new tab)</span></a>
+        </li>
+        <li>
+          <strong>Your bank</strong>
+          <p>Call straight away if you've paid or shared details.</p>
+          <p><b>Use the number on the back of your card</b> or in your bank's official app.</p>
+        </li>
+      </ul>
+      <div class="footer-bottom">
+        <p>ScamTrail is an independent information tool, not a government service. It gives general information, not legal or financial advice, and can't promise that anything is safe.</p>
+        <p class="emergency"><svg class="icon" aria-hidden="true"><use href="#i-alert"/></svg>In danger right now? Call 000</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/analyser.js"></script>
+  <script src="assets/js/app.js"></script>
+  <script src="assets/js/result.js"></script>
+</body>
+</html>
